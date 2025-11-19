@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Auth from './components/Auth'
 import Dashboard from './components/Dashboard'
 import { CompanyForm, PeriodForm, QuickLists } from './components/Forms'
+import Placements from './components/Placements'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -41,6 +42,8 @@ function App() {
                 <PeriodForm onCreated={()=>{}} />
               </div>
             )}
+
+            <Placements user={user} />
 
             <div className="p-4 rounded-xl bg-white/70 border border-sky-100">
               <h3 className="font-semibold text-sky-900">Roadmap Fitur</h3>
